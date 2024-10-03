@@ -34,12 +34,12 @@ Você deverá desenvolver o diagrama de caso de uso representando os atores, cas
 Você deverá desenvolver o diagrama entidade e relacionamento (DER) contendo as tabelas, relacionamentos, campos, chaves primárias e estrangeiras e os tipos de dados de acordo com o SGBD (Sistema de Gerenciamento de Banco de Dados) utilizado, para atender ao desafio proposto. O DER deve ser entregue em formato de imagem (.png, .jpeg) na pasta **./docs**.
 
 ### 3. Script de criação e população do banco de dados
-Você deverá desenvolver o script de criação do banco de dados contendo a criação do banco de dados **“saep_db”** e das tabelas de acordo com o diagrama entidade e relacionamento desenvolvido na entrega 2. No script deverão existir pelo menos **três registros** para todas as tabelas criadas, respeitando os tipos de dados, chaves primárias e estrangeiras.
+Você deverá desenvolver o script de criação do banco de dados contendo a criação do banco de dados **“turmas_db”** e das tabelas de acordo com o diagrama entidade e relacionamento desenvolvido na entrega 2. No script deverão existir pelo menos **três registros** para todas as tabelas criadas, respeitando os tipos de dados, chaves primárias e estrangeiras.
 O script do banco de dados deverá ser entregue no formato .sql e salvo na pasta **./docs**.
 
 ### 4. Tela de autenticação de usuários (login)
 Você deverá desenvolver uma tela de autenticação de usuários contendo um campo para informar o e-mail, um campo para informar a senha e um botão “entrar”. Essa deverá ser a tela principal que o usuário verá ao acessar o sistema.<br>O botão “entrar” deverá dar acesso a “tela principal do professor” caso o e-mail e senha informados sejam autenticados no banco de dados, criando então uma sessão. Caso o e-mail e senha não sejam autenticados, o usuário deverá ser redirecionado novamente à tela de autenticação. A imagem a seguir demonstra um exemplo do que deve ser desenvolvido nessa tela. O design do layout é de sua escolha, porém, deverá contemplar os elementos solicitados.
-- ![Wireframe da tela de autenticação](./wireframes/wireframe01.png)
+- ![Wireframe da tela de autenticação](./wireframe/wireframe01.png)
 
 ### 5. Tela principal do professor
 Você deverá desenvolver a tela principal do professor contendo os itens:
@@ -52,7 +52,7 @@ Você deverá desenvolver a tela principal do professor contendo os itens:
     - Botão para excluir
     - Botão para visualizar
 - A imagem (wireframe) a seguir representa um exemplo do que deve ser desenvolvido nessa tela. O design do layout é de sua escolha, porém, deverá contemplar os elementos solicitados.
-- ![Wireframe da tela principal do professor](./wireframes/wireframe02.png)
+- ![Wireframe da tela principal do professor](./wireframe/wireframe02.png)
 
 ### 6. Cadastro de turma
 Você deverá desenvolver uma tela contendo um campo, onde o usuário irá informar o nome da turma e um botão “cadastrar”. No banco de dados, deve ser registrada uma nova turma considerando o nome informado e o professor que cadastrou a turma. Uma turma pertence somente a um professor, porém, o
@@ -73,7 +73,7 @@ Você deverá desenvolver a tela de atividades da turma contendo:
     - Número da atividade
     - Descrição da atividade
 - A imagem (wireframe) a seguir representa um exemplo do que deve ser desenvolvido nessa tela. O design do layout é de sua escolha, porém, deverá contemplar os elementos solicitados.
-- ![Wireframe da tela de atividades da turma](./wireframes/wireframe03.png)
+- ![Wireframe da tela de atividades da turma](./wireframe/wireframe03.png)
 - Os dados apresentados podem ser estáticos, nesse momento, pois na entrega **10 listar atividades da turma**, será solicitada a listagem dinâmica de acordo com o banco de dados.
 
 ### 10. Listar atividades da turma
