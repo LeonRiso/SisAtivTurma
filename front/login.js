@@ -1,7 +1,7 @@
 const uri = "http://localhost:3000/";
-const logado = JSON.parse(localStorage.getItem("logado"));
+const user = JSON.parse(window.localStorage.getItem('userTurmaAtividade'));
 
-if (logado) {
+if (user) {
     window.location.href = "./home.html";
 }
 
@@ -10,8 +10,8 @@ const login = document.querySelector("#login");
 login.addEventListener("submit", async (e) => {
     e.preventDefault();
     const dados = {
-        email: login.email.value,
-        senha: login.senha.value,
+        email: e.target.email.value,
+        senha: e.target.senha.value,
     };
 
     const options = {
