@@ -18,10 +18,10 @@ if (!user || !user.logado) {
 professor.innerHTML = user.nome;
 nomeTurma.innerHTML = turma.nome;
 //Listar todas as turmas do professor
-fetch(uri + 'turma/' + turma.id)
+fetch(uri + 'atividade/' + turma.id)
     .then(response => response.json())
     .then(data => {
-        data.atividades.forEach(a => {
+        data.forEach(a => {
             corpo.innerHTML += `
             <tr>
                 <td style="text-align:center;padding: 0.5rem;">${a.id}</td>
