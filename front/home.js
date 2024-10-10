@@ -4,17 +4,20 @@ const professor = document.querySelector('#professor');
 const corpo = document.querySelector('#corpo');
 const form = document.querySelector('#formTurma');
 
-    if (!user) {
-        window.location.href = './index.html';
-    } else 
+    if (!user || !user.logado) {
+        console.log('User is not logged in, redirecting to index.html...');
 
-professor.innerHTML = user.nome;
+        window.location.href = './index.html';
+    } else {
+        const professor = document.querySelector('#professor');
+        professor.innerHTML = user.nome;  // Display professor's name on the home page
+    }
 
 //Listar todas as turmas do professor
-fetch(uri + 'professor/' + user.id)
+fetch(uri + 'turma/' + user.id)
     .then(response => response.json())
     .then(data => {
-        data.turmas.forEach(t => {
+        data.forEach(t => {
             corpo.innerHTML += `
             <tr>
                 <td style="text-align:center">${t.id}</td>
